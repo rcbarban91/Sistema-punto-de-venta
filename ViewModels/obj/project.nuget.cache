@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jBQpstqTr4XR35mzSlMvEI8GdpLtsl2otDx1yNcHE8QYmLmc36KqM4qrJylu2f69YRL9GUAW1Lj3nP5LZRtc6A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Raciel-PC\\Documents\\Proyectos\\Sistema punto de venta\\ViewModels\\ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Raciel-PC\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Raciel-PC\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

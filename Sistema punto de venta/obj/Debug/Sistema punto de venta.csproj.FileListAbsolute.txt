@@ -1,0 +1,10 @@
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\bin\Debug\Sistema punto de venta.exe.config
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\bin\Debug\Sistema punto de venta.exe
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\bin\Debug\Sistema punto de venta.pdb
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.csprojAssemblyReference.cache
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema_punto_de_venta.Form1.resources
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema_punto_de_venta.Properties.Resources.resources
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.csproj.GenerateResource.cache
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.csproj.CoreCompileInputs.cache
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.exe
+C:\Users\Raciel\source\repos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.pdb
