@@ -32,9 +32,23 @@
             this.tabControlPrincipal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBoxCliente_Direccion = new System.Windows.Forms.TextBox();
+            this.labelCliente_Direccion = new System.Windows.Forms.Label();
+            this.textBoxCliente_Telefono = new System.Windows.Forms.TextBox();
+            this.labelCliente_Telefono = new System.Windows.Forms.Label();
+            this.textBoxCliente_Email = new System.Windows.Forms.TextBox();
+            this.labelCliente_Email = new System.Windows.Forms.Label();
+            this.textBoxCliente_Apellido = new System.Windows.Forms.TextBox();
+            this.labelCliente_Apellido = new System.Windows.Forms.Label();
+            this.textBoxCliente_Nombre = new System.Windows.Forms.TextBox();
+            this.labelCliente_Nombre = new System.Windows.Forms.Label();
+            this.textBoxCliente_NID = new System.Windows.Forms.TextBox();
+            this.labelCliente_NID = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -43,35 +57,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.labelCliente_NID = new System.Windows.Forms.Label();
-            this.textBoxCliente_NID = new System.Windows.Forms.TextBox();
-            this.textBoxCliente_Nombre = new System.Windows.Forms.TextBox();
-            this.labelCliente_Nombre = new System.Windows.Forms.Label();
-            this.textBoxCliente_Email = new System.Windows.Forms.TextBox();
-            this.labelCliente_Email = new System.Windows.Forms.Label();
-            this.textBoxCliente_Apellido = new System.Windows.Forms.TextBox();
-            this.labelCliente_Apellido = new System.Windows.Forms.Label();
-            this.textBoxCliente_Direccion = new System.Windows.Forms.TextBox();
-            this.labelCliente_Direccion = new System.Windows.Forms.Label();
-            this.textBoxCliente_Telefono = new System.Windows.Forms.TextBox();
-            this.labelCliente_Telefono = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonCliente = new System.Windows.Forms.Button();
             this.buttonCliente_Cancelar = new System.Windows.Forms.Button();
             this.buttonCliente_Agregar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCliente = new System.Windows.Forms.PictureBox();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlPrincipal
@@ -117,6 +117,14 @@
             this.tabPage2.Text = "Cliente";
             this.tabPage2.UseVisualStyleBackColor = true;
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Location = new System.Drawing.Point(425, 81);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1242, 490);
+            this.groupBox5.TabIndex = 2;
+            this.groupBox5.TabStop = false;
             // 
             // groupBox3
             // 
@@ -168,8 +176,141 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(402, 414);
             this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "Cliente";
+            this.tabPage3.Text = "Regristro de cliente";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // textBoxCliente_Direccion
+            // 
+            this.textBoxCliente_Direccion.Location = new System.Drawing.Point(211, 321);
+            this.textBoxCliente_Direccion.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_Direccion.Multiline = true;
+            this.textBoxCliente_Direccion.Name = "textBoxCliente_Direccion";
+            this.textBoxCliente_Direccion.Size = new System.Drawing.Size(179, 24);
+            this.textBoxCliente_Direccion.TabIndex = 13;
+            this.textBoxCliente_Direccion.TextChanged += new System.EventHandler(this.textBoxCliente_Direccion_TextChanged);
+            // 
+            // labelCliente_Direccion
+            // 
+            this.labelCliente_Direccion.AutoSize = true;
+            this.labelCliente_Direccion.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Direccion.Location = new System.Drawing.Point(208, 300);
+            this.labelCliente_Direccion.Name = "labelCliente_Direccion";
+            this.labelCliente_Direccion.Size = new System.Drawing.Size(67, 17);
+            this.labelCliente_Direccion.TabIndex = 12;
+            this.labelCliente_Direccion.Text = "Direccion";
+            // 
+            // textBoxCliente_Telefono
+            // 
+            this.textBoxCliente_Telefono.Location = new System.Drawing.Point(10, 321);
+            this.textBoxCliente_Telefono.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_Telefono.Multiline = true;
+            this.textBoxCliente_Telefono.Name = "textBoxCliente_Telefono";
+            this.textBoxCliente_Telefono.Size = new System.Drawing.Size(179, 24);
+            this.textBoxCliente_Telefono.TabIndex = 11;
+            this.textBoxCliente_Telefono.TextChanged += new System.EventHandler(this.textBoxCliente_Telefono_TextChanged);
+            this.textBoxCliente_Telefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCliente_Telefono_KeyPress);
+            // 
+            // labelCliente_Telefono
+            // 
+            this.labelCliente_Telefono.AutoSize = true;
+            this.labelCliente_Telefono.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Telefono.Location = new System.Drawing.Point(7, 300);
+            this.labelCliente_Telefono.Name = "labelCliente_Telefono";
+            this.labelCliente_Telefono.Size = new System.Drawing.Size(64, 17);
+            this.labelCliente_Telefono.TabIndex = 10;
+            this.labelCliente_Telefono.Text = "Telefono";
+            // 
+            // textBoxCliente_Email
+            // 
+            this.textBoxCliente_Email.Location = new System.Drawing.Point(211, 274);
+            this.textBoxCliente_Email.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_Email.Multiline = true;
+            this.textBoxCliente_Email.Name = "textBoxCliente_Email";
+            this.textBoxCliente_Email.Size = new System.Drawing.Size(179, 24);
+            this.textBoxCliente_Email.TabIndex = 9;
+            this.textBoxCliente_Email.TextChanged += new System.EventHandler(this.textBoxCliente_Email_TextChanged);
+            // 
+            // labelCliente_Email
+            // 
+            this.labelCliente_Email.AutoSize = true;
+            this.labelCliente_Email.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Email.Location = new System.Drawing.Point(208, 253);
+            this.labelCliente_Email.Name = "labelCliente_Email";
+            this.labelCliente_Email.Size = new System.Drawing.Size(42, 17);
+            this.labelCliente_Email.TabIndex = 8;
+            this.labelCliente_Email.Text = "Email";
+            // 
+            // textBoxCliente_Apellido
+            // 
+            this.textBoxCliente_Apellido.Location = new System.Drawing.Point(10, 274);
+            this.textBoxCliente_Apellido.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_Apellido.Multiline = true;
+            this.textBoxCliente_Apellido.Name = "textBoxCliente_Apellido";
+            this.textBoxCliente_Apellido.Size = new System.Drawing.Size(179, 24);
+            this.textBoxCliente_Apellido.TabIndex = 7;
+            this.textBoxCliente_Apellido.TextChanged += new System.EventHandler(this.textBoxCliente_Apellido_TextChanged);
+            this.textBoxCliente_Apellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCliente_Apellido_KeyPress);
+            // 
+            // labelCliente_Apellido
+            // 
+            this.labelCliente_Apellido.AutoSize = true;
+            this.labelCliente_Apellido.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Apellido.Location = new System.Drawing.Point(7, 253);
+            this.labelCliente_Apellido.Name = "labelCliente_Apellido";
+            this.labelCliente_Apellido.Size = new System.Drawing.Size(58, 17);
+            this.labelCliente_Apellido.TabIndex = 6;
+            this.labelCliente_Apellido.Text = "Apellido";
+            // 
+            // textBoxCliente_Nombre
+            // 
+            this.textBoxCliente_Nombre.Location = new System.Drawing.Point(211, 224);
+            this.textBoxCliente_Nombre.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_Nombre.Multiline = true;
+            this.textBoxCliente_Nombre.Name = "textBoxCliente_Nombre";
+            this.textBoxCliente_Nombre.Size = new System.Drawing.Size(179, 24);
+            this.textBoxCliente_Nombre.TabIndex = 5;
+            this.textBoxCliente_Nombre.TextChanged += new System.EventHandler(this.textBoxCliente_Nombre_TextChanged);
+            this.textBoxCliente_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCliente_Nombre_KeyPress);
+            // 
+            // labelCliente_Nombre
+            // 
+            this.labelCliente_Nombre.AutoSize = true;
+            this.labelCliente_Nombre.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Nombre.Location = new System.Drawing.Point(208, 203);
+            this.labelCliente_Nombre.Name = "labelCliente_Nombre";
+            this.labelCliente_Nombre.Size = new System.Drawing.Size(58, 17);
+            this.labelCliente_Nombre.TabIndex = 4;
+            this.labelCliente_Nombre.Text = "Nombre";
+            // 
+            // textBoxCliente_NID
+            // 
+            this.textBoxCliente_NID.Location = new System.Drawing.Point(10, 224);
+            this.textBoxCliente_NID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_NID.Multiline = true;
+            this.textBoxCliente_NID.Name = "textBoxCliente_NID";
+            this.textBoxCliente_NID.Size = new System.Drawing.Size(179, 24);
+            this.textBoxCliente_NID.TabIndex = 3;
+            this.textBoxCliente_NID.TextChanged += new System.EventHandler(this.textBoxCliente_NID_TextChanged);
+            this.textBoxCliente_NID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCliente_NID_KeyPress);
+            // 
+            // labelCliente_NID
+            // 
+            this.labelCliente_NID.AutoSize = true;
+            this.labelCliente_NID.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_NID.Location = new System.Drawing.Point(7, 203);
+            this.labelCliente_NID.Name = "labelCliente_NID";
+            this.labelCliente_NID.Size = new System.Drawing.Size(31, 17);
+            this.labelCliente_NID.TabIndex = 2;
+            this.labelCliente_NID.Text = "NID";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.pictureBoxCliente);
+            this.groupBox4.Location = new System.Drawing.Point(109, 27);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(200, 160);
+            this.groupBox4.TabIndex = 1;
+            this.groupBox4.TabStop = false;
             // 
             // label4
             // 
@@ -188,7 +329,7 @@
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(421, 414);
+            this.tabPage4.Size = new System.Drawing.Size(402, 414);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Pago";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -269,137 +410,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema punto de venta";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.pictureBox2);
-            this.groupBox4.Location = new System.Drawing.Point(109, 27);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 160);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            // 
-            // labelCliente_NID
-            // 
-            this.labelCliente_NID.AutoSize = true;
-            this.labelCliente_NID.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.labelCliente_NID.Location = new System.Drawing.Point(7, 203);
-            this.labelCliente_NID.Name = "labelCliente_NID";
-            this.labelCliente_NID.Size = new System.Drawing.Size(31, 17);
-            this.labelCliente_NID.TabIndex = 2;
-            this.labelCliente_NID.Text = "NID";
-            // 
-            // textBoxCliente_NID
-            // 
-            this.textBoxCliente_NID.Location = new System.Drawing.Point(10, 224);
-            this.textBoxCliente_NID.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCliente_NID.Multiline = true;
-            this.textBoxCliente_NID.Name = "textBoxCliente_NID";
-            this.textBoxCliente_NID.Size = new System.Drawing.Size(179, 24);
-            this.textBoxCliente_NID.TabIndex = 3;
-            // 
-            // textBoxCliente_Nombre
-            // 
-            this.textBoxCliente_Nombre.Location = new System.Drawing.Point(211, 224);
-            this.textBoxCliente_Nombre.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCliente_Nombre.Multiline = true;
-            this.textBoxCliente_Nombre.Name = "textBoxCliente_Nombre";
-            this.textBoxCliente_Nombre.Size = new System.Drawing.Size(179, 24);
-            this.textBoxCliente_Nombre.TabIndex = 5;
-            // 
-            // labelCliente_Nombre
-            // 
-            this.labelCliente_Nombre.AutoSize = true;
-            this.labelCliente_Nombre.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.labelCliente_Nombre.Location = new System.Drawing.Point(208, 203);
-            this.labelCliente_Nombre.Name = "labelCliente_Nombre";
-            this.labelCliente_Nombre.Size = new System.Drawing.Size(58, 17);
-            this.labelCliente_Nombre.TabIndex = 4;
-            this.labelCliente_Nombre.Text = "Nombre";
-            // 
-            // textBoxCliente_Email
-            // 
-            this.textBoxCliente_Email.Location = new System.Drawing.Point(211, 274);
-            this.textBoxCliente_Email.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCliente_Email.Multiline = true;
-            this.textBoxCliente_Email.Name = "textBoxCliente_Email";
-            this.textBoxCliente_Email.Size = new System.Drawing.Size(179, 24);
-            this.textBoxCliente_Email.TabIndex = 9;
-            // 
-            // labelCliente_Email
-            // 
-            this.labelCliente_Email.AutoSize = true;
-            this.labelCliente_Email.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.labelCliente_Email.Location = new System.Drawing.Point(208, 253);
-            this.labelCliente_Email.Name = "labelCliente_Email";
-            this.labelCliente_Email.Size = new System.Drawing.Size(42, 17);
-            this.labelCliente_Email.TabIndex = 8;
-            this.labelCliente_Email.Text = "Email";
-            // 
-            // textBoxCliente_Apellido
-            // 
-            this.textBoxCliente_Apellido.Location = new System.Drawing.Point(10, 274);
-            this.textBoxCliente_Apellido.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCliente_Apellido.Multiline = true;
-            this.textBoxCliente_Apellido.Name = "textBoxCliente_Apellido";
-            this.textBoxCliente_Apellido.Size = new System.Drawing.Size(179, 24);
-            this.textBoxCliente_Apellido.TabIndex = 7;
-            // 
-            // labelCliente_Apellido
-            // 
-            this.labelCliente_Apellido.AutoSize = true;
-            this.labelCliente_Apellido.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.labelCliente_Apellido.Location = new System.Drawing.Point(7, 253);
-            this.labelCliente_Apellido.Name = "labelCliente_Apellido";
-            this.labelCliente_Apellido.Size = new System.Drawing.Size(58, 17);
-            this.labelCliente_Apellido.TabIndex = 6;
-            this.labelCliente_Apellido.Text = "Apellido";
-            // 
-            // textBoxCliente_Direccion
-            // 
-            this.textBoxCliente_Direccion.Location = new System.Drawing.Point(211, 321);
-            this.textBoxCliente_Direccion.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCliente_Direccion.Multiline = true;
-            this.textBoxCliente_Direccion.Name = "textBoxCliente_Direccion";
-            this.textBoxCliente_Direccion.Size = new System.Drawing.Size(179, 24);
-            this.textBoxCliente_Direccion.TabIndex = 13;
-            // 
-            // labelCliente_Direccion
-            // 
-            this.labelCliente_Direccion.AutoSize = true;
-            this.labelCliente_Direccion.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.labelCliente_Direccion.Location = new System.Drawing.Point(208, 300);
-            this.labelCliente_Direccion.Name = "labelCliente_Direccion";
-            this.labelCliente_Direccion.Size = new System.Drawing.Size(67, 17);
-            this.labelCliente_Direccion.TabIndex = 12;
-            this.labelCliente_Direccion.Text = "Direccion";
-            // 
-            // textBoxCliente_Telefono
-            // 
-            this.textBoxCliente_Telefono.Location = new System.Drawing.Point(10, 321);
-            this.textBoxCliente_Telefono.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxCliente_Telefono.Multiline = true;
-            this.textBoxCliente_Telefono.Name = "textBoxCliente_Telefono";
-            this.textBoxCliente_Telefono.Size = new System.Drawing.Size(179, 24);
-            this.textBoxCliente_Telefono.TabIndex = 11;
-            // 
-            // labelCliente_Telefono
-            // 
-            this.labelCliente_Telefono.AutoSize = true;
-            this.labelCliente_Telefono.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.labelCliente_Telefono.Location = new System.Drawing.Point(7, 300);
-            this.labelCliente_Telefono.Name = "labelCliente_Telefono";
-            this.labelCliente_Telefono.Size = new System.Drawing.Size(64, 17);
-            this.labelCliente_Telefono.TabIndex = 10;
-            this.labelCliente_Telefono.Text = "Telefono";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Location = new System.Drawing.Point(425, 81);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1242, 490);
-            this.groupBox5.TabIndex = 2;
-            this.groupBox5.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -414,9 +424,10 @@
             // buttonCliente
             // 
             this.buttonCliente.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCliente.FlatAppearance.BorderSize = 0;
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.boton1;
+            this.buttonCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.cliente;
             this.buttonCliente.Location = new System.Drawing.Point(104, 85);
             this.buttonCliente.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente.Name = "buttonCliente";
@@ -428,39 +439,45 @@
             // buttonCliente_Cancelar
             // 
             this.buttonCliente_Cancelar.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCliente_Cancelar.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.eliminar;
+            this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.cancelar;
             this.buttonCliente_Cancelar.Location = new System.Drawing.Point(211, 367);
             this.buttonCliente_Cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Cancelar.Name = "buttonCliente_Cancelar";
             this.buttonCliente_Cancelar.Size = new System.Drawing.Size(100, 39);
             this.buttonCliente_Cancelar.TabIndex = 14;
             this.buttonCliente_Cancelar.UseVisualStyleBackColor = false;
+            this.buttonCliente_Cancelar.Click += new System.EventHandler(this.buttonCliente_Cancelar_Click);
             // 
             // buttonCliente_Agregar
             // 
             this.buttonCliente_Agregar.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonCliente_Agregar.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar;
+            this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar1;
             this.buttonCliente_Agregar.Location = new System.Drawing.Point(89, 367);
             this.buttonCliente_Agregar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Agregar.Name = "buttonCliente_Agregar";
             this.buttonCliente_Agregar.Size = new System.Drawing.Size(100, 39);
             this.buttonCliente_Agregar.TabIndex = 4;
             this.buttonCliente_Agregar.UseVisualStyleBackColor = false;
+            this.buttonCliente_Agregar.Click += new System.EventHandler(this.buttonCliente_Agregar_Click);
             // 
-            // pictureBox2
+            // pictureBoxCliente
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::Sistema_punto_de_venta.Properties.Resources.foto_de_perfil;
-            this.pictureBox2.Location = new System.Drawing.Point(19, 13);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(161, 141);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.foto_de_perfil;
+            this.pictureBoxCliente.Location = new System.Drawing.Point(19, 13);
+            this.pictureBoxCliente.Name = "pictureBoxCliente";
+            this.pictureBoxCliente.Size = new System.Drawing.Size(161, 141);
+            this.pictureBoxCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCliente.TabIndex = 0;
+            this.pictureBoxCliente.TabStop = false;
+            this.pictureBoxCliente.Click += new System.EventHandler(this.pictureBoxCliente_Click);
             // 
             // Form1
             // 
@@ -484,13 +501,13 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -525,7 +542,7 @@
         private System.Windows.Forms.TextBox textBoxCliente_NID;
         private System.Windows.Forms.Label labelCliente_NID;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxCliente;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button buttonCliente_Cancelar;
         private System.Windows.Forms.Button buttonCliente_Agregar;

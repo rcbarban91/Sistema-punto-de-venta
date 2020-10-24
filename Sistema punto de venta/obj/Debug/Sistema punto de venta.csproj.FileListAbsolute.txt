@@ -18,3 +18,6 @@ C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de v
 C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.csproj.CoreCompileInputs.cache
 C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.exe
 C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.pdb
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de venta\bin\Debug\ViewModels.dll
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de venta\bin\Debug\ViewModels.pdb
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\Sistema punto de venta\obj\Debug\Sistema punto de venta.csproj.CopyComplete

@@ -1,0 +1,6 @@
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\ViewModels\bin\Debug\ViewModels.dll
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\ViewModels\bin\Debug\ViewModels.pdb
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\ViewModels\obj\Debug\ViewModels.csprojAssemblyReference.cache
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\ViewModels\obj\Debug\ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\ViewModels\obj\Debug\ViewModels.dll
+C:\Users\Raciel-PC\Documents\Proyectos\Sistema punto de venta\ViewModels\obj\Debug\ViewModels.pdb
