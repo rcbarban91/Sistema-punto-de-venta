@@ -26,5 +26,19 @@ namespace Sistema_punto_de_venta
         {
 
         }
+
+        /***********************
+         *                     *
+         *  CODIGO DEL CLIENTE *
+         *                     *
+         ***********************/
+
+        #region
+
+        private void buttonCliente_Click(object sender, EventArgs e)
+        {
+            tabControlPrincipal.SelectedIndex = 1;
+        }
+        #endregion
     }
 }
