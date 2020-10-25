@@ -91,13 +91,13 @@ namespace ViewModels
                                                 }
                                                 else
                                                 {
-                                                    if (list[0].NID.Equals(_textBoxCliente[0].Text))
+                                                    if (cliente1.Count > 0)
                                                     {
                                                         _labelCliente[0].Text = "Este NID ya esta registrado";
                                                         _labelCliente[0].ForeColor = Color.Red;
                                                         _textBoxCliente[0].Focus();
                                                     }
-                                                    if (list[0].Email.Equals(_textBoxCliente[3].Text))
+                                                    if (cliente2.Count > 0)
                                                     {
                                                         _labelCliente[3].Text = "Este Email ya esta registrado";
                                                         _labelCliente[3].ForeColor = Color.Red;
@@ -129,10 +129,11 @@ namespace ViewModels
             try
             {
                 var srcImage = Objects.uploadimage.ResizeImage(_imagePictureBox.Image, 165, 100);
+                var image = Objects.uploadimage.ImageToByte(srcImage);
             }
             catch (Exception)
             {
-
+                arr
                 throw;
             }
         }
