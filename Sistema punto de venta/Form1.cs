@@ -57,7 +57,9 @@ namespace Sistema_punto_de_venta
             labelCliente.Add(labelCliente_Telefono);
             labelCliente.Add(labelCliente_Direccion);
 
-            clientes = new ClientesVM(textBoxCliente, labelCliente);
+            object[] objetos = { pictureBoxCliente };
+
+            clientes = new ClientesVM(objetos, textBoxCliente, labelCliente);
 
             tabControlPrincipal.SelectedIndex = 1;
         }
