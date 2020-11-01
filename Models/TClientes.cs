@@ -18,6 +18,7 @@ namespace Models
         public string Telefono { set; get; }
         public string Direccion { set; get; }
         public string Fecha { set; get; }
+        public bool Credito { set; get; }
         public byte[] Imagen { set; get; }
     }
 }

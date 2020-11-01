@@ -1,4 +1,5 @@
-﻿using Models.Conexion;
+﻿using LinqToDB;
+using Models.Conexion;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -17,6 +18,7 @@ namespace ViewModels
         private TextBoxEvent evento;
         private string _accion = "inset";
         private PictureBox _imagePictureBox;
+        private CheckBox _checkBoxCredito;
 
         public ClientesVM(object[] objetos, List<TextBox> textBoxCliente, List<Label> labelCliente)
         {
@@ -24,6 +26,7 @@ namespace ViewModels
             _labelCliente = labelCliente;
             evento = new TextBoxEvent();
             _imagePictureBox = (PictureBox)objetos[0];
+            _checkBoxCredito = (CheckBox)objetos[1];
         }
 
         public void guardarCliente()
@@ -130,10 +133,36 @@ namespace ViewModels
             {
                 var srcImage = Objects.uploadimage.ResizeImage(_imagePictureBox.Image, 165, 100);
                 var image = Objects.uploadimage.ImageToByte(srcImage);
+
+                switch (_accion)
+                {
+                    case "insert":
+                        TClientes.Value(c => c.NID, _textBoxCliente[0].Text)
+                                 .Value(c => c.Nombre, _textBoxCliente[1].Text)
+                                 .Value(c => c.Apellido, _textBoxCliente[2].Text)
+                                 .Value(c => c.Email, _textBoxCliente[3].Text)
+                                 .Value(c => c.Telefono, _textBoxCliente[4].Text)
+                                 .Value(c => c.Direccion, _textBoxCliente[5].Text)
+                                 .Value(c => c.Credito, _checkBoxCredito.Checked)
+                                 .Value(c => c.Fecha, DateTime.Now.ToString("dd/MMMM/yyyy"))
+                                 .Value(c => c.Imagen, image)
+                                 .Insert();
+
+                        var cliente = TClientes.ToList().Last();
+
+                        TReportes_Clientes.Value(c => c.UltimoPago, 0)
+                            .Value(c => c.FechaPago, "--/--/--")
+                            .Value(c => c.DeudaActual, 0)
+                            .Value(c => c.FechaDeuda, "--/--/--")
+                            .Value(c => c.Ticket, "00000000")
+                            .Value(c => c.FechaLimite, "--/--/--")
+                            .Value(c => c.IdCliente, cliente.IdCliente)
+                            .Insert();
+                        break;
+                }
             }
             catch (Exception)
             {
-                arr
                 throw;
             }
         }

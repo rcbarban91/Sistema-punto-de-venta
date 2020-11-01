@@ -36,6 +36,8 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.buttonCliente_Cancelar = new System.Windows.Forms.Button();
+            this.buttonCliente_Agregar = new System.Windows.Forms.Button();
             this.textBoxCliente_Direccion = new System.Windows.Forms.TextBox();
             this.labelCliente_Direccion = new System.Windows.Forms.Label();
             this.textBoxCliente_Telefono = new System.Windows.Forms.TextBox();
@@ -49,6 +51,7 @@
             this.textBoxCliente_NID = new System.Windows.Forms.TextBox();
             this.labelCliente_NID = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxCliente = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -56,22 +59,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonCliente = new System.Windows.Forms.Button();
-            this.buttonCliente_Cancelar = new System.Windows.Forms.Button();
-            this.buttonCliente_Agregar = new System.Windows.Forms.Button();
-            this.pictureBoxCliente = new System.Windows.Forms.PictureBox();
+            this.checkBoxCliente_Credito = new System.Windows.Forms.CheckBox();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlPrincipal
@@ -149,11 +150,12 @@
             this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(410, 443);
+            this.tabControl2.Size = new System.Drawing.Size(410, 471);
             this.tabControl2.TabIndex = 0;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.checkBoxCliente_Credito);
             this.tabPage3.Controls.Add(this.buttonCliente_Cancelar);
             this.tabPage3.Controls.Add(this.buttonCliente_Agregar);
             this.tabPage3.Controls.Add(this.textBoxCliente_Direccion);
@@ -174,10 +176,40 @@
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage3.Size = new System.Drawing.Size(402, 414);
+            this.tabPage3.Size = new System.Drawing.Size(402, 442);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Regristro de cliente";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // buttonCliente_Cancelar
+            // 
+            this.buttonCliente_Cancelar.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Cancelar.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.cancelar;
+            this.buttonCliente_Cancelar.Location = new System.Drawing.Point(211, 389);
+            this.buttonCliente_Cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Cancelar.Name = "buttonCliente_Cancelar";
+            this.buttonCliente_Cancelar.Size = new System.Drawing.Size(100, 39);
+            this.buttonCliente_Cancelar.TabIndex = 14;
+            this.buttonCliente_Cancelar.UseVisualStyleBackColor = false;
+            this.buttonCliente_Cancelar.Click += new System.EventHandler(this.buttonCliente_Cancelar_Click);
+            // 
+            // buttonCliente_Agregar
+            // 
+            this.buttonCliente_Agregar.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Agregar.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar1;
+            this.buttonCliente_Agregar.Location = new System.Drawing.Point(89, 389);
+            this.buttonCliente_Agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Agregar.Name = "buttonCliente_Agregar";
+            this.buttonCliente_Agregar.Size = new System.Drawing.Size(100, 39);
+            this.buttonCliente_Agregar.TabIndex = 4;
+            this.buttonCliente_Agregar.UseVisualStyleBackColor = false;
+            this.buttonCliente_Agregar.Click += new System.EventHandler(this.buttonCliente_Agregar_Click);
             // 
             // textBoxCliente_Direccion
             // 
@@ -312,6 +344,19 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             // 
+            // pictureBoxCliente
+            // 
+            this.pictureBoxCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.foto_de_perfil;
+            this.pictureBoxCliente.Location = new System.Drawing.Point(19, 13);
+            this.pictureBoxCliente.Name = "pictureBoxCliente";
+            this.pictureBoxCliente.Size = new System.Drawing.Size(161, 141);
+            this.pictureBoxCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCliente.TabIndex = 0;
+            this.pictureBoxCliente.TabStop = false;
+            this.pictureBoxCliente.Click += new System.EventHandler(this.pictureBoxCliente_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -397,6 +442,17 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -409,17 +465,6 @@
             this.label1.Size = new System.Drawing.Size(437, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema punto de venta";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonCliente
             // 
@@ -436,48 +481,15 @@
             this.buttonCliente.UseVisualStyleBackColor = false;
             this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
             // 
-            // buttonCliente_Cancelar
+            // checkBoxCliente_Credito
             // 
-            this.buttonCliente_Cancelar.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Cancelar.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.cancelar;
-            this.buttonCliente_Cancelar.Location = new System.Drawing.Point(211, 367);
-            this.buttonCliente_Cancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Cancelar.Name = "buttonCliente_Cancelar";
-            this.buttonCliente_Cancelar.Size = new System.Drawing.Size(100, 39);
-            this.buttonCliente_Cancelar.TabIndex = 14;
-            this.buttonCliente_Cancelar.UseVisualStyleBackColor = false;
-            this.buttonCliente_Cancelar.Click += new System.EventHandler(this.buttonCliente_Cancelar_Click);
-            // 
-            // buttonCliente_Agregar
-            // 
-            this.buttonCliente_Agregar.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Agregar.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar1;
-            this.buttonCliente_Agregar.Location = new System.Drawing.Point(89, 367);
-            this.buttonCliente_Agregar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Agregar.Name = "buttonCliente_Agregar";
-            this.buttonCliente_Agregar.Size = new System.Drawing.Size(100, 39);
-            this.buttonCliente_Agregar.TabIndex = 4;
-            this.buttonCliente_Agregar.UseVisualStyleBackColor = false;
-            this.buttonCliente_Agregar.Click += new System.EventHandler(this.buttonCliente_Agregar_Click);
-            // 
-            // pictureBoxCliente
-            // 
-            this.pictureBoxCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.foto_de_perfil;
-            this.pictureBoxCliente.Location = new System.Drawing.Point(19, 13);
-            this.pictureBoxCliente.Name = "pictureBoxCliente";
-            this.pictureBoxCliente.Size = new System.Drawing.Size(161, 141);
-            this.pictureBoxCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCliente.TabIndex = 0;
-            this.pictureBoxCliente.TabStop = false;
-            this.pictureBoxCliente.Click += new System.EventHandler(this.pictureBoxCliente_Click);
+            this.checkBoxCliente_Credito.AutoSize = true;
+            this.checkBoxCliente_Credito.Location = new System.Drawing.Point(11, 352);
+            this.checkBoxCliente_Credito.Name = "checkBoxCliente_Credito";
+            this.checkBoxCliente_Credito.Size = new System.Drawing.Size(75, 21);
+            this.checkBoxCliente_Credito.TabIndex = 15;
+            this.checkBoxCliente_Credito.Text = "Credito";
+            this.checkBoxCliente_Credito.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -502,12 +514,12 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -546,6 +558,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button buttonCliente_Cancelar;
         private System.Windows.Forms.Button buttonCliente_Agregar;
+        private System.Windows.Forms.CheckBox checkBoxCliente_Credito;
     }
 }
 
