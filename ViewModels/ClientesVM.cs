@@ -16,9 +16,10 @@ namespace ViewModels
         private List<TextBox> _textBoxCliente;
         private List<Label> _labelCliente;
         private TextBoxEvent evento;
-        private string _accion = "inset";
+        private string _accion = "insert";
         private PictureBox _imagePictureBox;
         private CheckBox _checkBoxCredito;
+        private Bitmap _imageBitmap;
 
         public ClientesVM(object[] objetos, List<TextBox> textBoxCliente, List<Label> labelCliente)
         {
@@ -26,6 +27,7 @@ namespace ViewModels
             _labelCliente = labelCliente;
             evento = new TextBoxEvent();
             _imagePictureBox = (PictureBox)objetos[0];
+            _imageBitmap = (Bitmap)objetos[2];
             _checkBoxCredito = (CheckBox)objetos[1];
         }
 
@@ -156,15 +158,44 @@ namespace ViewModels
                             .Value(c => c.FechaDeuda, "--/--/--")
                             .Value(c => c.Ticket, "00000000")
                             .Value(c => c.FechaLimite, "--/--/--")
-                            .Value(c => c.IdCliente, cliente.IdCliente)
+                            .Value(c => c.IdCliente, cliente.ID)
                             .Insert();
                         break;
                 }
+                CommitTransaction();
+                restablecer();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                RollbackTransaction();
+                MessageBox.Show(ex.Message);
             }
+        }
+
+        public void restablecer()
+        {
+            _accion = "insert";
+            _imagePictureBox.Image = _imageBitmap;
+            _textBoxCliente[0].Text = "";
+            _textBoxCliente[1].Text = "";
+            _textBoxCliente[2].Text = "";
+            _textBoxCliente[3].Text = "";
+            _textBoxCliente[4].Text = "";
+            _textBoxCliente[5].Text = "";
+            _checkBoxCredito.Checked = false;
+            _checkBoxCredito.ForeColor = Color.LightSlateGray;
+            _labelCliente[0].Text = "NID";
+            _labelCliente[0].ForeColor = Color.LightSlateGray;
+            _labelCliente[1].Text = "Nombre";
+            _labelCliente[1].ForeColor = Color.LightSlateGray;
+            _labelCliente[2].Text = "Apellido";
+            _labelCliente[2].ForeColor = Color.LightSlateGray;
+            _labelCliente[3].Text = "Email";
+            _labelCliente[3].ForeColor = Color.LightSlateGray;
+            _labelCliente[4].Text = "Telefono";
+            _labelCliente[4].ForeColor = Color.LightSlateGray;
+            _labelCliente[5].Text = "Direccion";
+            _labelCliente[5].ForeColor = Color.LightSlateGray;
         }
     }
 }
