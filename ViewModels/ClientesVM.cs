@@ -1,4 +1,5 @@
 ﻿using LinqToDB;
+using Models;
 using Models.Conexion;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,8 @@ namespace ViewModels
         private PictureBox _imagePictureBox;
         private CheckBox _checkBoxCredito;
         private Bitmap _imageBitmap;
+        private static DataGridView _dataGridViewClientes;
+        private int _num_pagina = 1, _reg_por_pagina = 10;
 
         public ClientesVM(object[] objetos, List<TextBox> textBoxCliente, List<Label> labelCliente)
         {
@@ -29,6 +32,8 @@ namespace ViewModels
             _imagePictureBox = (PictureBox)objetos[0];
             _imageBitmap = (Bitmap)objetos[2];
             _checkBoxCredito = (CheckBox)objetos[1];
+            _dataGridViewClientes = (DataGridView)objetos[3];
+            restablecer();
         }
 
         public void guardarCliente()
@@ -172,9 +177,26 @@ namespace ViewModels
             }
         }
 
+        public async Task SearchClientesAsync(string campo)
+        {
+            List<TClientes> query;
+            int inicio = (_num_pagina - 1) * _reg_por_pagina;
+
+            if (campo.Equals(""))
+            {
+                query = await TClientes.ToListAsync();
+            }
+            else
+            {
+                query = await TClientes.Where(c => c.NID.StartsWith(campo) || c.Nombre.StartsWith(campo) || c.Apellido.StartsWith(campo)).ToListAsync();
+            }
+            _dataGridViewClientes.DataSource = query.Skip(inicio).Take(_reg_por_pagina).ToList();
+        }
+
         public void restablecer()
         {
             _accion = "insert";
+            _num_pagina = 1;
             _imagePictureBox.Image = _imageBitmap;
             _textBoxCliente[0].Text = "";
             _textBoxCliente[1].Text = "";
@@ -196,6 +218,7 @@ namespace ViewModels
             _labelCliente[4].ForeColor = Color.LightSlateGray;
             _labelCliente[5].Text = "Direccion";
             _labelCliente[5].ForeColor = Color.LightSlateGray;
+            _ = SearchClientesAsync("");
         }
     }
 }

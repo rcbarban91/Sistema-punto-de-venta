@@ -57,7 +57,7 @@ namespace Sistema_punto_de_venta
             labelCliente.Add(labelCliente_Telefono);
             labelCliente.Add(labelCliente_Direccion);
 
-            object[] objetos = { pictureBoxCliente, checkBoxCliente_Credito, Properties.Resources.foto_de_perfil};
+            object[] objetos = { pictureBoxCliente, checkBoxCliente_Credito, Properties.Resources.foto_de_perfil, dataGridView_Clientes};
 
             clientes = new ClientesVM(objetos, textBoxCliente, labelCliente);
 
