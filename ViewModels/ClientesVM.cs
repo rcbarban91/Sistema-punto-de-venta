@@ -191,6 +191,40 @@ namespace ViewModels
                 query = await TClientes.Where(c => c.NID.StartsWith(campo) || c.Nombre.StartsWith(campo) || c.Apellido.StartsWith(campo)).ToListAsync();
             }
             _dataGridViewClientes.DataSource = query.Skip(inicio).Take(_reg_por_pagina).ToList();
+            _dataGridViewClientes.Columns[0].Visible = false;
+            _dataGridViewClientes.Columns[7].Visible = false;
+            _dataGridViewClientes.Columns[9].Visible = false;
+            _dataGridViewClientes.Columns[1].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+            _dataGridViewClientes.Columns[3].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+            _dataGridViewClientes.Columns[5].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+            _dataGridViewClientes.Columns[7].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+        }
+
+        private int _idCliente = 0;
+
+        public void GetCliente()
+        {
+            _accion = "update";
+            _idCliente = Convert.ToInt16(_dataGridViewClientes.CurrentRow.Cells[0].Value);
+            _textBoxCliente[0].Text = Convert.ToString(_dataGridViewClientes.CurrentRow.Cells[1].Value);
+            _textBoxCliente[1].Text = Convert.ToString(_dataGridViewClientes.CurrentRow.Cells[2].Value);
+            _textBoxCliente[2].Text = Convert.ToString(_dataGridViewClientes.CurrentRow.Cells[3].Value);
+            _textBoxCliente[3].Text = Convert.ToString(_dataGridViewClientes.CurrentRow.Cells[4].Value);
+            _textBoxCliente[4].Text = Convert.ToString(_dataGridViewClientes.CurrentRow.Cells[5].Value);
+            _textBoxCliente[5].Text = Convert.ToString(_dataGridViewClientes.CurrentRow.Cells[6].Value);
+
+            try
+            {
+                byte[] arrayImage = (byte[])_dataGridViewClientes.CurrentRow.Cells[9].Value;
+                //_imagePictureBox.Image = Objects.uploadimage.byteArrayToImage(arrayImage);
+            }
+            catch (Exception)
+            {
+                _imagePictureBox.Image = _imageBitmap;
+            }
+
+            _checkBoxCredito.Checked = Convert.ToBoolean(_dataGridViewClientes.CurrentRow.Cells[8].Value);
+            _checkBoxCredito.ForeColor = _checkBoxCredito.Checked ? Color.Green : Color.Red;
         }
 
         public void restablecer()

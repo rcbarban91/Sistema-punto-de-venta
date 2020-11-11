@@ -174,7 +174,24 @@ namespace Sistema_punto_de_venta
 
         private void buttonCliente_Cancelar_Click(object sender, EventArgs e)
         {
+            clientes.restablecer();
+        }
+        
 
+        private void dataGridView_Clientes_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView_Clientes.Rows.Count != 0)
+            {
+                clientes.GetCliente();
+            }            
+        }
+
+        private void dataGridView_Clientes_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (dataGridView_Clientes.Rows.Count != 0)
+            {
+                clientes.GetCliente();
+            }
         }
         #endregion
     }
