@@ -216,7 +216,7 @@ namespace ViewModels
             try
             {
                 byte[] arrayImage = (byte[])_dataGridViewClientes.CurrentRow.Cells[9].Value;
-                //_imagePictureBox.Image = Objects.uploadimage.byteArrayToImage(arrayImage);
+                _imagePictureBox.Image = Objects.uploadimage.byteArrayToImage(arrayImage);
             }
             catch (Exception)
             {
