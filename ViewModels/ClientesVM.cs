@@ -22,6 +22,9 @@ namespace ViewModels
         private CheckBox _checkBoxCredito;
         private Bitmap _imageBitmap;
         private static DataGridView _dataGridViewClientes;
+        private NumericUpDown _numericUpDown;
+        private Paginador<TClientes> _paginadorClientes;
+        private List<TClientes> listClientes;
         private int _num_pagina = 1, _reg_por_pagina = 10;
 
         public ClientesVM(object[] objetos, List<TextBox> textBoxCliente, List<Label> labelCliente)
@@ -33,6 +36,7 @@ namespace ViewModels
             _imageBitmap = (Bitmap)objetos[2];
             _checkBoxCredito = (CheckBox)objetos[1];
             _dataGridViewClientes = (DataGridView)objetos[3];
+            _numericUpDown = (NumericUpDown)objetos[4];
             restablecer();
         }
 
@@ -177,27 +181,35 @@ namespace ViewModels
             }
         }
 
-        public async Task SearchClientesAsync(string campo)
+        public void SearchClientes(string campo)
         {
-            List<TClientes> query;
+            List<TClientes> query = new List<TClientes>();
             int inicio = (_num_pagina - 1) * _reg_por_pagina;
 
             if (campo.Equals(""))
             {
-                query = await TClientes.ToListAsync();
+                query = TClientes.ToList();
             }
             else
             {
-                query = await TClientes.Where(c => c.NID.StartsWith(campo) || c.Nombre.StartsWith(campo) || c.Apellido.StartsWith(campo)).ToListAsync();
+                query = TClientes.Where(c => c.NID.StartsWith(campo) || c.Nombre.StartsWith(campo) || c.Apellido.StartsWith(campo)).ToList();
             }
-            _dataGridViewClientes.DataSource = query.Skip(inicio).Take(_reg_por_pagina).ToList();
-            _dataGridViewClientes.Columns[0].Visible = false;
-            _dataGridViewClientes.Columns[7].Visible = false;
-            _dataGridViewClientes.Columns[9].Visible = false;
-            _dataGridViewClientes.Columns[1].DefaultCellStyle.BackColor = Color.WhiteSmoke;
-            _dataGridViewClientes.Columns[3].DefaultCellStyle.BackColor = Color.WhiteSmoke;
-            _dataGridViewClientes.Columns[5].DefaultCellStyle.BackColor = Color.WhiteSmoke;
-            _dataGridViewClientes.Columns[7].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+            if (query.Count > 0)
+            {
+                _dataGridViewClientes.DataSource = query.Skip(inicio).Take(_reg_por_pagina).ToList();
+                _dataGridViewClientes.Columns[0].Visible = false;
+                _dataGridViewClientes.Columns[7].Visible = false;
+                _dataGridViewClientes.Columns[9].Visible = false;
+                _dataGridViewClientes.Columns[1].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                _dataGridViewClientes.Columns[3].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                _dataGridViewClientes.Columns[5].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+                _dataGridViewClientes.Columns[7].DefaultCellStyle.BackColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                _dataGridViewClientes.DataSource = query;
+            }
+            
         }
 
         private int _idCliente = 0;
@@ -252,7 +264,55 @@ namespace ViewModels
             _labelCliente[4].ForeColor = Color.LightSlateGray;
             _labelCliente[5].Text = "Direccion";
             _labelCliente[5].ForeColor = Color.LightSlateGray;
-            _ = SearchClientesAsync("");
+            SearchClientes("");
+            listClientes = TClientes.ToList();
+            if (listClientes.Count > 0)
+            {
+                _paginadorClientes = new Paginador<TClientes>(listClientes, _labelCliente[6], _reg_por_pagina);
+            }            
+        }
+
+        public void Paginador(string metodo)
+        {
+            switch (metodo)
+            {
+                case "Primero":
+                    if (listClientes.Count > 0)
+                    {
+                        _num_pagina = _paginadorClientes.primero();
+                    }                    
+                    break;
+                case "Anterior":
+                    if (listClientes.Count > 0)
+                    {
+                        _num_pagina = _paginadorClientes.anterior();
+                    }
+                    break;
+                case "Siguiente":
+                    if (listClientes.Count > 0)
+                    {
+                        _num_pagina = _paginadorClientes.siguiente();
+                    }
+                    break;
+                case "Ultimo":
+                    if (listClientes.Count > 0)
+                    {
+                        _num_pagina = _paginadorClientes.ultimo();
+                    }
+                    break;
+            }
+            SearchClientes("");
+        }
+        public void Registro_Paginas()
+        {
+            _num_pagina = 1;
+            _reg_por_pagina = (int)_numericUpDown.Value;
+            listClientes = TClientes.ToList();
+            if (listClientes.Count > 0)
+            {
+                _paginadorClientes = new Paginador<TClientes>(listClientes, _labelCliente[6], _reg_por_pagina);
+                SearchClientes("");
+            }
         }
     }
 }

@@ -63,6 +63,26 @@ namespace Sistema_punto_de_venta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2arrow_left {
+            get {
+                object obj = ResourceManager.GetObject("2arrow_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2arrow_raigt {
+            get {
+                object obj = ResourceManager.GetObject("2arrow_raigt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap adicionar {
             get {
                 object obj = ResourceManager.GetObject("adicionar", resourceCulture);

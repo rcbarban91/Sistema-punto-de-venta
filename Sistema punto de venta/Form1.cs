@@ -56,8 +56,9 @@ namespace Sistema_punto_de_venta
             labelCliente.Add(labelCliente_Email);
             labelCliente.Add(labelCliente_Telefono);
             labelCliente.Add(labelCliente_Direccion);
+            labelCliente.Add(label_PaginasClientes);            
 
-            object[] objetos = { pictureBoxCliente, checkBoxCliente_Credito, Properties.Resources.foto_de_perfil, dataGridView_Clientes};
+            object[] objetos = { pictureBoxCliente, checkBoxCliente_Credito, Properties.Resources.foto_de_perfil, dataGridView_Clientes, numeric_PaginasClientes };
 
             clientes = new ClientesVM(objetos, textBoxCliente, labelCliente);
 
@@ -192,6 +193,31 @@ namespace Sistema_punto_de_venta
             {
                 clientes.GetCliente();
             }
+        }        
+
+        private void buttonCliente_Pagina1_Click(object sender, EventArgs e)
+        {
+            clientes.Paginador("Primero");
+        }
+
+        private void buttonCliente_Pagina2_Click(object sender, EventArgs e)
+        {
+            clientes.Paginador("Anterior");
+        }
+
+        private void buttonCliente_Pagina3_Click(object sender, EventArgs e)
+        {
+            clientes.Paginador("Siguiente");
+        }
+
+        private void buttonCliente_Pagina4_Click(object sender, EventArgs e)
+        {
+            clientes.Paginador("Ultimo");
+        }        
+
+        private void numeric_PaginasClientes_ValueChanged(object sender, EventArgs e)
+        {
+            clientes.Registro_Paginas();
         }
         #endregion
     }
