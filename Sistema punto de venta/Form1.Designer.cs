@@ -75,6 +75,24 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonCliente = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.labelReport_Nombre = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.labelCliente_Deuda = new System.Windows.Forms.Label();
+            this.labelCliente_FechaDeuda = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.labelCliente_FechaPago = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.labelCliente_Pago = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.labelCliente_Ticket = new System.Windows.Forms.Label();
+            this.labelCliente_Pagos = new System.Windows.Forms.Label();
+            this.textBoxCliente_Pagos = new System.Windows.Forms.TextBox();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -87,9 +105,13 @@
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControlPrincipal
@@ -104,7 +126,7 @@
             this.tabControlPrincipal.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlPrincipal.Name = "tabControlPrincipal";
             this.tabControlPrincipal.SelectedIndex = 0;
-            this.tabControlPrincipal.Size = new System.Drawing.Size(1685, 609);
+            this.tabControlPrincipal.Size = new System.Drawing.Size(1685, 655);
             this.tabControlPrincipal.TabIndex = 1;
             // 
             // tabPage1
@@ -130,7 +152,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1677, 580);
+            this.tabPage2.Size = new System.Drawing.Size(1677, 626);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Cliente";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -151,7 +173,7 @@
             this.groupBox5.Controls.Add(this.tabControlCliente2);
             this.groupBox5.Location = new System.Drawing.Point(425, 81);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(1242, 490);
+            this.groupBox5.Size = new System.Drawing.Size(1242, 536);
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             // 
@@ -161,7 +183,7 @@
             this.label_PaginasClientes.AutoSize = true;
             this.label_PaginasClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_PaginasClientes.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label_PaginasClientes.Location = new System.Drawing.Point(579, 413);
+            this.label_PaginasClientes.Location = new System.Drawing.Point(579, 459);
             this.label_PaginasClientes.Name = "label_PaginasClientes";
             this.label_PaginasClientes.Size = new System.Drawing.Size(69, 20);
             this.label_PaginasClientes.TabIndex = 10;
@@ -175,7 +197,7 @@
             this.buttonCliente_Pagina4.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Pagina4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente_Pagina4.Image = global::Sistema_punto_de_venta.Properties.Resources._2arrow_raigt;
-            this.buttonCliente_Pagina4.Location = new System.Drawing.Point(692, 440);
+            this.buttonCliente_Pagina4.Location = new System.Drawing.Point(692, 486);
             this.buttonCliente_Pagina4.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Pagina4.Name = "buttonCliente_Pagina4";
             this.buttonCliente_Pagina4.Size = new System.Drawing.Size(65, 24);
@@ -191,7 +213,7 @@
             this.buttonCliente_Pagina3.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Pagina3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente_Pagina3.Image = global::Sistema_punto_de_venta.Properties.Resources.arrow_right;
-            this.buttonCliente_Pagina3.Location = new System.Drawing.Point(620, 440);
+            this.buttonCliente_Pagina3.Location = new System.Drawing.Point(620, 486);
             this.buttonCliente_Pagina3.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Pagina3.Name = "buttonCliente_Pagina3";
             this.buttonCliente_Pagina3.Size = new System.Drawing.Size(65, 24);
@@ -207,7 +229,7 @@
             this.buttonCliente_Pagina2.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Pagina2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente_Pagina2.Image = global::Sistema_punto_de_venta.Properties.Resources.arrow_left;
-            this.buttonCliente_Pagina2.Location = new System.Drawing.Point(548, 440);
+            this.buttonCliente_Pagina2.Location = new System.Drawing.Point(548, 486);
             this.buttonCliente_Pagina2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Pagina2.Name = "buttonCliente_Pagina2";
             this.buttonCliente_Pagina2.Size = new System.Drawing.Size(65, 24);
@@ -223,7 +245,7 @@
             this.buttonCliente_Pagina1.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Pagina1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente_Pagina1.Image = global::Sistema_punto_de_venta.Properties.Resources._2arrow_left;
-            this.buttonCliente_Pagina1.Location = new System.Drawing.Point(476, 440);
+            this.buttonCliente_Pagina1.Location = new System.Drawing.Point(476, 486);
             this.buttonCliente_Pagina1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Pagina1.Name = "buttonCliente_Pagina1";
             this.buttonCliente_Pagina1.Size = new System.Drawing.Size(65, 24);
@@ -235,7 +257,7 @@
             // 
             this.numeric_PaginasClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numeric_PaginasClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numeric_PaginasClientes.Location = new System.Drawing.Point(7, 435);
+            this.numeric_PaginasClientes.Location = new System.Drawing.Point(7, 481);
             this.numeric_PaginasClientes.Name = "numeric_PaginasClientes";
             this.numeric_PaginasClientes.Size = new System.Drawing.Size(72, 24);
             this.numeric_PaginasClientes.TabIndex = 6;
@@ -251,7 +273,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.label5.Location = new System.Drawing.Point(0, 413);
+            this.label5.Location = new System.Drawing.Point(0, 459);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 17);
             this.label5.TabIndex = 5;
@@ -267,7 +289,7 @@
             this.tabControlCliente2.Location = new System.Drawing.Point(3, 0);
             this.tabControlCliente2.Name = "tabControlCliente2";
             this.tabControlCliente2.SelectedIndex = 0;
-            this.tabControlCliente2.Size = new System.Drawing.Size(1241, 410);
+            this.tabControlCliente2.Size = new System.Drawing.Size(1241, 456);
             this.tabControlCliente2.TabIndex = 1;
             this.tabControlCliente2.SelectedIndexChanged += new System.EventHandler(this.tabControlCliente2_SelectedIndexChanged);
             // 
@@ -277,7 +299,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1233, 381);
+            this.tabPage5.Size = new System.Drawing.Size(1233, 427);
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "Lista de clientes";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -306,7 +328,7 @@
             this.dataGridView_Clientes.RowHeadersWidth = 51;
             this.dataGridView_Clientes.RowTemplate.Height = 24;
             this.dataGridView_Clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView_Clientes.Size = new System.Drawing.Size(1221, 369);
+            this.dataGridView_Clientes.Size = new System.Drawing.Size(1221, 415);
             this.dataGridView_Clientes.TabIndex = 0;
             this.dataGridView_Clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_Clientes_CellClick);
             this.dataGridView_Clientes.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGridView_Clientes_KeyUp);
@@ -332,7 +354,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(417, 499);
+            this.groupBox3.Size = new System.Drawing.Size(417, 545);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
@@ -346,7 +368,7 @@
             this.tabControlCliente1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControlCliente1.Name = "tabControlCliente1";
             this.tabControlCliente1.SelectedIndex = 0;
-            this.tabControlCliente1.Size = new System.Drawing.Size(410, 410);
+            this.tabControlCliente1.Size = new System.Drawing.Size(410, 456);
             this.tabControlCliente1.TabIndex = 0;
             this.tabControlCliente1.SelectedIndexChanged += new System.EventHandler(this.tabControlCliente1_SelectedIndexChanged);
             // 
@@ -545,11 +567,18 @@
             // 
             // tabPage4
             // 
+            this.tabPage4.Controls.Add(this.textBoxCliente_Pagos);
+            this.tabPage4.Controls.Add(this.labelCliente_Pagos);
+            this.tabPage4.Controls.Add(this.groupBox8);
+            this.tabPage4.Controls.Add(this.groupBox7);
+            this.tabPage4.Controls.Add(this.groupBox6);
+            this.tabPage4.Controls.Add(this.labelReport_Nombre);
+            this.tabPage4.Controls.Add(this.label6);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage4.Size = new System.Drawing.Size(402, 381);
+            this.tabPage4.Size = new System.Drawing.Size(402, 427);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Pagos y reportes";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -562,7 +591,7 @@
             this.buttonCliente_Cancelar.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.cancelar;
-            this.buttonCliente_Cancelar.Location = new System.Drawing.Point(215, 442);
+            this.buttonCliente_Cancelar.Location = new System.Drawing.Point(215, 488);
             this.buttonCliente_Cancelar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Cancelar.Name = "buttonCliente_Cancelar";
             this.buttonCliente_Cancelar.Size = new System.Drawing.Size(100, 39);
@@ -578,7 +607,7 @@
             this.buttonCliente_Agregar.FlatAppearance.BorderSize = 0;
             this.buttonCliente_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar1;
-            this.buttonCliente_Agregar.Location = new System.Drawing.Point(93, 442);
+            this.buttonCliente_Agregar.Location = new System.Drawing.Point(93, 488);
             this.buttonCliente_Agregar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCliente_Agregar.Name = "buttonCliente_Agregar";
             this.buttonCliente_Agregar.Size = new System.Drawing.Size(100, 39);
@@ -689,13 +718,231 @@
             this.buttonCliente.UseVisualStyleBackColor = false;
             this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label6.Location = new System.Drawing.Point(119, 6);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(157, 20);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Reportes de pago";
+            // 
+            // labelReport_Nombre
+            // 
+            this.labelReport_Nombre.AutoSize = true;
+            this.labelReport_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReport_Nombre.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelReport_Nombre.Location = new System.Drawing.Point(115, 33);
+            this.labelReport_Nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelReport_Nombre.Name = "labelReport_Nombre";
+            this.labelReport_Nombre.Size = new System.Drawing.Size(167, 20);
+            this.labelReport_Nombre.TabIndex = 4;
+            this.labelReport_Nombre.Text = "Nombre del cliente";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.Controls.Add(this.labelCliente_FechaDeuda);
+            this.groupBox6.Controls.Add(this.label10);
+            this.groupBox6.Controls.Add(this.labelCliente_Deuda);
+            this.groupBox6.Controls.Add(this.label7);
+            this.groupBox6.Location = new System.Drawing.Point(1, 64);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(398, 100);
+            this.groupBox6.TabIndex = 5;
+            this.groupBox6.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label7.Location = new System.Drawing.Point(7, 25);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(137, 18);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Deuda del cliente";
+            // 
+            // labelCliente_Deuda
+            // 
+            this.labelCliente_Deuda.AutoSize = true;
+            this.labelCliente_Deuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCliente_Deuda.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Deuda.Location = new System.Drawing.Point(7, 65);
+            this.labelCliente_Deuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCliente_Deuda.Name = "labelCliente_Deuda";
+            this.labelCliente_Deuda.Size = new System.Drawing.Size(48, 29);
+            this.labelCliente_Deuda.TabIndex = 4;
+            this.labelCliente_Deuda.Text = "0.0";
+            // 
+            // labelCliente_FechaDeuda
+            // 
+            this.labelCliente_FechaDeuda.AutoSize = true;
+            this.labelCliente_FechaDeuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCliente_FechaDeuda.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_FechaDeuda.Location = new System.Drawing.Point(245, 65);
+            this.labelCliente_FechaDeuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCliente_FechaDeuda.Name = "labelCliente_FechaDeuda";
+            this.labelCliente_FechaDeuda.Size = new System.Drawing.Size(83, 29);
+            this.labelCliente_FechaDeuda.TabIndex = 6;
+            this.labelCliente_FechaDeuda.Text = "--/--/--";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label10.Location = new System.Drawing.Point(245, 25);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(145, 18);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "Fecha de la deuda";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox7.Controls.Add(this.labelCliente_FechaPago);
+            this.groupBox7.Controls.Add(this.label9);
+            this.groupBox7.Controls.Add(this.labelCliente_Pago);
+            this.groupBox7.Controls.Add(this.label12);
+            this.groupBox7.Location = new System.Drawing.Point(0, 170);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(398, 100);
+            this.groupBox7.TabIndex = 7;
+            this.groupBox7.TabStop = false;
+            // 
+            // labelCliente_FechaPago
+            // 
+            this.labelCliente_FechaPago.AutoSize = true;
+            this.labelCliente_FechaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCliente_FechaPago.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_FechaPago.Location = new System.Drawing.Point(245, 65);
+            this.labelCliente_FechaPago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCliente_FechaPago.Name = "labelCliente_FechaPago";
+            this.labelCliente_FechaPago.Size = new System.Drawing.Size(83, 29);
+            this.labelCliente_FechaPago.TabIndex = 6;
+            this.labelCliente_FechaPago.Text = "--/--/--";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label9.Location = new System.Drawing.Point(245, 25);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(123, 18);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Fecha del pago";
+            // 
+            // labelCliente_Pago
+            // 
+            this.labelCliente_Pago.AutoSize = true;
+            this.labelCliente_Pago.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCliente_Pago.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Pago.Location = new System.Drawing.Point(7, 65);
+            this.labelCliente_Pago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCliente_Pago.Name = "labelCliente_Pago";
+            this.labelCliente_Pago.Size = new System.Drawing.Size(48, 29);
+            this.labelCliente_Pago.TabIndex = 4;
+            this.labelCliente_Pago.Text = "0.0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label12.Location = new System.Drawing.Point(7, 25);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(180, 18);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Ultimo pago del cliente";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox8.Controls.Add(this.labelCliente_Ticket);
+            this.groupBox8.Controls.Add(this.label13);
+            this.groupBox8.Controls.Add(this.label14);
+            this.groupBox8.Location = new System.Drawing.Point(0, 272);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(398, 100);
+            this.groupBox8.TabIndex = 8;
+            this.groupBox8.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label13.Location = new System.Drawing.Point(7, 65);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 29);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Ticket:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.label14.Location = new System.Drawing.Point(7, 25);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(180, 18);
+            this.label14.TabIndex = 3;
+            this.label14.Text = "Ultimo pago del cliente";
+            // 
+            // labelCliente_Ticket
+            // 
+            this.labelCliente_Ticket.AutoSize = true;
+            this.labelCliente_Ticket.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCliente_Ticket.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Ticket.Location = new System.Drawing.Point(97, 65);
+            this.labelCliente_Ticket.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCliente_Ticket.Name = "labelCliente_Ticket";
+            this.labelCliente_Ticket.Size = new System.Drawing.Size(153, 29);
+            this.labelCliente_Ticket.TabIndex = 5;
+            this.labelCliente_Ticket.Text = "0000000000";
+            // 
+            // labelCliente_Pagos
+            // 
+            this.labelCliente_Pagos.AutoSize = true;
+            this.labelCliente_Pagos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCliente_Pagos.ForeColor = System.Drawing.Color.LightSlateGray;
+            this.labelCliente_Pagos.Location = new System.Drawing.Point(7, 391);
+            this.labelCliente_Pagos.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCliente_Pagos.Name = "labelCliente_Pagos";
+            this.labelCliente_Pagos.Size = new System.Drawing.Size(56, 18);
+            this.labelCliente_Pagos.TabIndex = 7;
+            this.labelCliente_Pagos.Text = "Pagos";
+            // 
+            // textBoxCliente_Pagos
+            // 
+            this.textBoxCliente_Pagos.Location = new System.Drawing.Point(69, 390);
+            this.textBoxCliente_Pagos.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxCliente_Pagos.Multiline = true;
+            this.textBoxCliente_Pagos.Name = "textBoxCliente_Pagos";
+            this.textBoxCliente_Pagos.Size = new System.Drawing.Size(260, 24);
+            this.textBoxCliente_Pagos.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1685, 748);
+            this.ClientSize = new System.Drawing.Size(1685, 794);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonCliente);
             this.Controls.Add(this.tabControlPrincipal);
@@ -719,11 +966,19 @@
             this.tabPage3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -774,6 +1029,24 @@
         private System.Windows.Forms.Button buttonCliente_Pagina1;
         private System.Windows.Forms.NumericUpDown numeric_PaginasClientes;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label labelCliente_FechaDeuda;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label labelCliente_Deuda;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label labelReport_Nombre;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxCliente_Pagos;
+        private System.Windows.Forms.Label labelCliente_Pagos;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label labelCliente_Ticket;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label labelCliente_FechaPago;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelCliente_Pago;
+        private System.Windows.Forms.Label label12;
     }
 }
 
