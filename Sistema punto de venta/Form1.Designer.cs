@@ -28,21 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControlPrincipal = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label_PaginasClientes = new System.Windows.Forms.Label();
+            this.buttonCliente_Pagina4 = new System.Windows.Forms.Button();
+            this.buttonCliente_Pagina3 = new System.Windows.Forms.Button();
+            this.buttonCliente_Pagina2 = new System.Windows.Forms.Button();
+            this.buttonCliente_Pagina1 = new System.Windows.Forms.Button();
             this.numeric_PaginasClientes = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlCliente2 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.dataGridView_Clientes = new System.Windows.Forms.DataGridView();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabControlCliente1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.checkBoxCliente_Credito = new System.Windows.Forms.CheckBox();
             this.textBoxCliente_Direccion = new System.Windows.Forms.TextBox();
@@ -58,38 +62,34 @@
             this.textBoxCliente_NID = new System.Windows.Forms.TextBox();
             this.labelCliente_NID = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBoxCliente = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.buttonCliente_Cancelar = new System.Windows.Forms.Button();
+            this.buttonCliente_Agregar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBoxCliente_Buscar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.buttonCliente = new System.Windows.Forms.Button();
-            this.buttonCliente_Pagina4 = new System.Windows.Forms.Button();
-            this.buttonCliente_Pagina3 = new System.Windows.Forms.Button();
-            this.buttonCliente_Pagina2 = new System.Windows.Forms.Button();
-            this.buttonCliente_Pagina1 = new System.Windows.Forms.Button();
-            this.pictureBoxCliente = new System.Windows.Forms.PictureBox();
-            this.buttonCliente_Cancelar = new System.Windows.Forms.Button();
-            this.buttonCliente_Agregar = new System.Windows.Forms.Button();
             this.tabControlPrincipal.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_PaginasClientes)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.tabControlCliente2.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).BeginInit();
             this.groupBox3.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.tabControlCliente1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlPrincipal
@@ -148,7 +148,7 @@
             this.groupBox5.Controls.Add(this.buttonCliente_Pagina1);
             this.groupBox5.Controls.Add(this.numeric_PaginasClientes);
             this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.tabControl1);
+            this.groupBox5.Controls.Add(this.tabControlCliente2);
             this.groupBox5.Location = new System.Drawing.Point(425, 81);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(1242, 490);
@@ -166,6 +166,70 @@
             this.label_PaginasClientes.Size = new System.Drawing.Size(69, 20);
             this.label_PaginasClientes.TabIndex = 10;
             this.label_PaginasClientes.Text = "Paginas";
+            // 
+            // buttonCliente_Pagina4
+            // 
+            this.buttonCliente_Pagina4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCliente_Pagina4.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Pagina4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Pagina4.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Pagina4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Pagina4.Image = global::Sistema_punto_de_venta.Properties.Resources._2arrow_raigt;
+            this.buttonCliente_Pagina4.Location = new System.Drawing.Point(692, 440);
+            this.buttonCliente_Pagina4.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Pagina4.Name = "buttonCliente_Pagina4";
+            this.buttonCliente_Pagina4.Size = new System.Drawing.Size(65, 24);
+            this.buttonCliente_Pagina4.TabIndex = 9;
+            this.buttonCliente_Pagina4.UseVisualStyleBackColor = false;
+            this.buttonCliente_Pagina4.Click += new System.EventHandler(this.buttonCliente_Pagina4_Click);
+            // 
+            // buttonCliente_Pagina3
+            // 
+            this.buttonCliente_Pagina3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCliente_Pagina3.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Pagina3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Pagina3.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Pagina3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Pagina3.Image = global::Sistema_punto_de_venta.Properties.Resources.arrow_right;
+            this.buttonCliente_Pagina3.Location = new System.Drawing.Point(620, 440);
+            this.buttonCliente_Pagina3.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Pagina3.Name = "buttonCliente_Pagina3";
+            this.buttonCliente_Pagina3.Size = new System.Drawing.Size(65, 24);
+            this.buttonCliente_Pagina3.TabIndex = 8;
+            this.buttonCliente_Pagina3.UseVisualStyleBackColor = false;
+            this.buttonCliente_Pagina3.Click += new System.EventHandler(this.buttonCliente_Pagina3_Click);
+            // 
+            // buttonCliente_Pagina2
+            // 
+            this.buttonCliente_Pagina2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCliente_Pagina2.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Pagina2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Pagina2.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Pagina2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Pagina2.Image = global::Sistema_punto_de_venta.Properties.Resources.arrow_left;
+            this.buttonCliente_Pagina2.Location = new System.Drawing.Point(548, 440);
+            this.buttonCliente_Pagina2.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Pagina2.Name = "buttonCliente_Pagina2";
+            this.buttonCliente_Pagina2.Size = new System.Drawing.Size(65, 24);
+            this.buttonCliente_Pagina2.TabIndex = 7;
+            this.buttonCliente_Pagina2.UseVisualStyleBackColor = false;
+            this.buttonCliente_Pagina2.Click += new System.EventHandler(this.buttonCliente_Pagina2_Click);
+            // 
+            // buttonCliente_Pagina1
+            // 
+            this.buttonCliente_Pagina1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCliente_Pagina1.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Pagina1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Pagina1.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Pagina1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Pagina1.Image = global::Sistema_punto_de_venta.Properties.Resources._2arrow_left;
+            this.buttonCliente_Pagina1.Location = new System.Drawing.Point(476, 440);
+            this.buttonCliente_Pagina1.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Pagina1.Name = "buttonCliente_Pagina1";
+            this.buttonCliente_Pagina1.Size = new System.Drawing.Size(65, 24);
+            this.buttonCliente_Pagina1.TabIndex = 4;
+            this.buttonCliente_Pagina1.UseVisualStyleBackColor = false;
+            this.buttonCliente_Pagina1.Click += new System.EventHandler(this.buttonCliente_Pagina1_Click);
             // 
             // numeric_PaginasClientes
             // 
@@ -193,18 +257,19 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Registro por paginas";
             // 
-            // tabControl1
+            // tabControlCliente2
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControlCliente2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(3, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1241, 410);
-            this.tabControl1.TabIndex = 1;
+            this.tabControlCliente2.Controls.Add(this.tabPage5);
+            this.tabControlCliente2.Controls.Add(this.tabPage6);
+            this.tabControlCliente2.Location = new System.Drawing.Point(3, 0);
+            this.tabControlCliente2.Name = "tabControlCliente2";
+            this.tabControlCliente2.SelectedIndex = 0;
+            this.tabControlCliente2.Size = new System.Drawing.Size(1241, 410);
+            this.tabControlCliente2.TabIndex = 1;
+            this.tabControlCliente2.SelectedIndexChanged += new System.EventHandler(this.tabControlCliente2_SelectedIndexChanged);
             // 
             // tabPage5
             // 
@@ -226,14 +291,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_Clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_Clientes.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView_Clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_Clientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView_Clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Clientes.Location = new System.Drawing.Point(6, 6);
             this.dataGridView_Clientes.Name = "dataGridView_Clientes";
@@ -260,7 +325,7 @@
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox3.Controls.Add(this.tabControl2);
+            this.groupBox3.Controls.Add(this.tabControlCliente1);
             this.groupBox3.Controls.Add(this.buttonCliente_Cancelar);
             this.groupBox3.Controls.Add(this.buttonCliente_Agregar);
             this.groupBox3.Location = new System.Drawing.Point(1, 74);
@@ -271,18 +336,19 @@
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             // 
-            // tabControl2
+            // tabControlCliente1
             // 
-            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControlCliente1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(0, 7);
-            this.tabControl2.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(410, 410);
-            this.tabControl2.TabIndex = 0;
+            this.tabControlCliente1.Controls.Add(this.tabPage3);
+            this.tabControlCliente1.Controls.Add(this.tabPage4);
+            this.tabControlCliente1.Location = new System.Drawing.Point(0, 7);
+            this.tabControlCliente1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabControlCliente1.Name = "tabControlCliente1";
+            this.tabControlCliente1.SelectedIndex = 0;
+            this.tabControlCliente1.Size = new System.Drawing.Size(410, 410);
+            this.tabControlCliente1.TabIndex = 0;
+            this.tabControlCliente1.SelectedIndexChanged += new System.EventHandler(this.tabControlCliente1_SelectedIndexChanged);
             // 
             // tabPage3
             // 
@@ -453,6 +519,19 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             // 
+            // pictureBoxCliente
+            // 
+            this.pictureBoxCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.foto_de_perfil;
+            this.pictureBoxCliente.Location = new System.Drawing.Point(19, 13);
+            this.pictureBoxCliente.Name = "pictureBoxCliente";
+            this.pictureBoxCliente.Size = new System.Drawing.Size(161, 141);
+            this.pictureBoxCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCliente.TabIndex = 0;
+            this.pictureBoxCliente.TabStop = false;
+            this.pictureBoxCliente.Click += new System.EventHandler(this.pictureBoxCliente_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -474,6 +553,38 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Pagos y reportes";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // buttonCliente_Cancelar
+            // 
+            this.buttonCliente_Cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCliente_Cancelar.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Cancelar.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.cancelar;
+            this.buttonCliente_Cancelar.Location = new System.Drawing.Point(215, 442);
+            this.buttonCliente_Cancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Cancelar.Name = "buttonCliente_Cancelar";
+            this.buttonCliente_Cancelar.Size = new System.Drawing.Size(100, 39);
+            this.buttonCliente_Cancelar.TabIndex = 14;
+            this.buttonCliente_Cancelar.UseVisualStyleBackColor = false;
+            this.buttonCliente_Cancelar.Click += new System.EventHandler(this.buttonCliente_Cancelar_Click);
+            // 
+            // buttonCliente_Agregar
+            // 
+            this.buttonCliente_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.buttonCliente_Agregar.BackColor = System.Drawing.Color.Gray;
+            this.buttonCliente_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCliente_Agregar.FlatAppearance.BorderSize = 0;
+            this.buttonCliente_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar1;
+            this.buttonCliente_Agregar.Location = new System.Drawing.Point(93, 442);
+            this.buttonCliente_Agregar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCliente_Agregar.Name = "buttonCliente_Agregar";
+            this.buttonCliente_Agregar.Size = new System.Drawing.Size(100, 39);
+            this.buttonCliente_Agregar.TabIndex = 4;
+            this.buttonCliente_Agregar.UseVisualStyleBackColor = false;
+            this.buttonCliente_Agregar.Click += new System.EventHandler(this.buttonCliente_Agregar_Click);
             // 
             // groupBox2
             // 
@@ -498,6 +609,7 @@
             this.textBoxCliente_Buscar.Name = "textBoxCliente_Buscar";
             this.textBoxCliente_Buscar.Size = new System.Drawing.Size(260, 24);
             this.textBoxCliente_Buscar.TabIndex = 2;
+            this.textBoxCliente_Buscar.TextChanged += new System.EventHandler(this.textBoxCliente_Buscar_TextChanged);
             // 
             // label3
             // 
@@ -538,6 +650,17 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(17, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 65);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
@@ -550,17 +673,6 @@
             this.label1.Size = new System.Drawing.Size(437, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sistema punto de venta";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(17, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(79, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // buttonCliente
             // 
@@ -576,115 +688,6 @@
             this.buttonCliente.TabIndex = 2;
             this.buttonCliente.UseVisualStyleBackColor = false;
             this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
-            // 
-            // buttonCliente_Pagina4
-            // 
-            this.buttonCliente_Pagina4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCliente_Pagina4.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Pagina4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Pagina4.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Pagina4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Pagina4.Image = global::Sistema_punto_de_venta.Properties.Resources._2arrow_raigt;
-            this.buttonCliente_Pagina4.Location = new System.Drawing.Point(692, 440);
-            this.buttonCliente_Pagina4.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Pagina4.Name = "buttonCliente_Pagina4";
-            this.buttonCliente_Pagina4.Size = new System.Drawing.Size(65, 24);
-            this.buttonCliente_Pagina4.TabIndex = 9;
-            this.buttonCliente_Pagina4.UseVisualStyleBackColor = false;
-            this.buttonCliente_Pagina4.Click += new System.EventHandler(this.buttonCliente_Pagina4_Click);
-            // 
-            // buttonCliente_Pagina3
-            // 
-            this.buttonCliente_Pagina3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCliente_Pagina3.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Pagina3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Pagina3.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Pagina3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Pagina3.Image = global::Sistema_punto_de_venta.Properties.Resources.arrow_right;
-            this.buttonCliente_Pagina3.Location = new System.Drawing.Point(620, 440);
-            this.buttonCliente_Pagina3.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Pagina3.Name = "buttonCliente_Pagina3";
-            this.buttonCliente_Pagina3.Size = new System.Drawing.Size(65, 24);
-            this.buttonCliente_Pagina3.TabIndex = 8;
-            this.buttonCliente_Pagina3.UseVisualStyleBackColor = false;
-            this.buttonCliente_Pagina3.Click += new System.EventHandler(this.buttonCliente_Pagina3_Click);
-            // 
-            // buttonCliente_Pagina2
-            // 
-            this.buttonCliente_Pagina2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCliente_Pagina2.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Pagina2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Pagina2.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Pagina2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Pagina2.Image = global::Sistema_punto_de_venta.Properties.Resources.arrow_left;
-            this.buttonCliente_Pagina2.Location = new System.Drawing.Point(548, 440);
-            this.buttonCliente_Pagina2.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Pagina2.Name = "buttonCliente_Pagina2";
-            this.buttonCliente_Pagina2.Size = new System.Drawing.Size(65, 24);
-            this.buttonCliente_Pagina2.TabIndex = 7;
-            this.buttonCliente_Pagina2.UseVisualStyleBackColor = false;
-            this.buttonCliente_Pagina2.Click += new System.EventHandler(this.buttonCliente_Pagina2_Click);
-            // 
-            // buttonCliente_Pagina1
-            // 
-            this.buttonCliente_Pagina1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCliente_Pagina1.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Pagina1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Pagina1.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Pagina1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Pagina1.Image = global::Sistema_punto_de_venta.Properties.Resources._2arrow_left;
-            this.buttonCliente_Pagina1.Location = new System.Drawing.Point(476, 440);
-            this.buttonCliente_Pagina1.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Pagina1.Name = "buttonCliente_Pagina1";
-            this.buttonCliente_Pagina1.Size = new System.Drawing.Size(65, 24);
-            this.buttonCliente_Pagina1.TabIndex = 4;
-            this.buttonCliente_Pagina1.UseVisualStyleBackColor = false;
-            this.buttonCliente_Pagina1.Click += new System.EventHandler(this.buttonCliente_Pagina1_Click);
-            // 
-            // pictureBoxCliente
-            // 
-            this.pictureBoxCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxCliente.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxCliente.Image = global::Sistema_punto_de_venta.Properties.Resources.foto_de_perfil;
-            this.pictureBoxCliente.Location = new System.Drawing.Point(19, 13);
-            this.pictureBoxCliente.Name = "pictureBoxCliente";
-            this.pictureBoxCliente.Size = new System.Drawing.Size(161, 141);
-            this.pictureBoxCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxCliente.TabIndex = 0;
-            this.pictureBoxCliente.TabStop = false;
-            this.pictureBoxCliente.Click += new System.EventHandler(this.pictureBoxCliente_Click);
-            // 
-            // buttonCliente_Cancelar
-            // 
-            this.buttonCliente_Cancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCliente_Cancelar.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Cancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Cancelar.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Cancelar.Image = global::Sistema_punto_de_venta.Properties.Resources.cancelar;
-            this.buttonCliente_Cancelar.Location = new System.Drawing.Point(215, 442);
-            this.buttonCliente_Cancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Cancelar.Name = "buttonCliente_Cancelar";
-            this.buttonCliente_Cancelar.Size = new System.Drawing.Size(100, 39);
-            this.buttonCliente_Cancelar.TabIndex = 14;
-            this.buttonCliente_Cancelar.UseVisualStyleBackColor = false;
-            this.buttonCliente_Cancelar.Click += new System.EventHandler(this.buttonCliente_Cancelar_Click);
-            // 
-            // buttonCliente_Agregar
-            // 
-            this.buttonCliente_Agregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonCliente_Agregar.BackColor = System.Drawing.Color.Gray;
-            this.buttonCliente_Agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCliente_Agregar.FlatAppearance.BorderSize = 0;
-            this.buttonCliente_Agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCliente_Agregar.Image = global::Sistema_punto_de_venta.Properties.Resources.adicionar1;
-            this.buttonCliente_Agregar.Location = new System.Drawing.Point(93, 442);
-            this.buttonCliente_Agregar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCliente_Agregar.Name = "buttonCliente_Agregar";
-            this.buttonCliente_Agregar.Size = new System.Drawing.Size(100, 39);
-            this.buttonCliente_Agregar.TabIndex = 4;
-            this.buttonCliente_Agregar.UseVisualStyleBackColor = false;
-            this.buttonCliente_Agregar.Click += new System.EventHandler(this.buttonCliente_Agregar_Click);
             // 
             // Form1
             // 
@@ -707,20 +710,20 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_PaginasClientes)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlCliente2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Clientes)).EndInit();
             this.groupBox3.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
+            this.tabControlCliente1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCliente)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -738,7 +741,7 @@
         private System.Windows.Forms.TextBox textBoxCliente_Buscar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl tabControlCliente1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.Label label4;
@@ -761,7 +764,7 @@
         private System.Windows.Forms.Button buttonCliente_Agregar;
         private System.Windows.Forms.CheckBox checkBoxCliente_Credito;
         private System.Windows.Forms.DataGridView dataGridView_Clientes;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlCliente2;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Label label_PaginasClientes;

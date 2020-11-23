@@ -119,6 +119,73 @@ namespace ViewModels
                                                     }
                                                 }
                                                 break;
+                                            case "update":
+                                                if (list.Count.Equals(2))
+                                                {
+                                                    if (cliente1[0].ID.Equals(_idCliente) &&
+                                                        cliente2[0].ID.Equals(_idCliente))
+                                                    {
+                                                        SaveDate();
+                                                    }
+                                                    else
+                                                    {
+                                                        if (cliente1[0].ID != _idCliente)
+                                                        {
+                                                            _labelCliente[0].Text = "Este NID ya esta registrado";
+                                                            _labelCliente[0].ForeColor = Color.Red;
+                                                            _textBoxCliente[0].Focus();
+                                                        }
+                                                        if (cliente2[0].ID != _idCliente)
+                                                        {
+                                                            _labelCliente[3].Text = "Este Email ya esta registrado";
+                                                            _labelCliente[3].ForeColor = Color.Red;
+                                                            _textBoxCliente[3].Focus();
+                                                        }
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (list.Count.Equals(0))
+                                                    {
+                                                        SaveDate();
+                                                    }
+                                                    else
+                                                    {
+                                                        if (0 != cliente1.Count)
+                                                        {
+                                                            if (cliente1[0].ID.Equals(_idCliente))
+                                                            {
+                                                                SaveDate();
+                                                            }
+                                                            else
+                                                            {
+                                                                if (cliente1[0].ID != _idCliente)
+                                                                {
+                                                                    _labelCliente[0].Text = "Este NID ya esta registrado";
+                                                                    _labelCliente[0].ForeColor = Color.Red;
+                                                                    _textBoxCliente[0].Focus();
+                                                                }                                                                
+                                                            }
+                                                        }
+                                                        if (0 != cliente2.Count)
+                                                        {
+                                                            if (cliente2[0].ID.Equals(_idCliente))
+                                                            {
+                                                                SaveDate();
+                                                            }
+                                                            else
+                                                            {
+                                                                if (cliente2[0].ID != _idCliente)
+                                                                {
+                                                                    _labelCliente[3].Text = "Este Email ya esta registrado";
+                                                                    _labelCliente[3].ForeColor = Color.Red;
+                                                                    _textBoxCliente[3].Focus();
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                break;
                                         }
                                     }
                                 }
@@ -169,6 +236,18 @@ namespace ViewModels
                             .Value(c => c.FechaLimite, "--/--/--")
                             .Value(c => c.IdCliente, cliente.ID)
                             .Insert();
+                        break;
+                    case "update":
+                        TClientes.Where(u => u.ID.Equals(_idCliente))
+                            .Set(c => c.NID, _textBoxCliente[0].Text)
+                            .Set(c => c.Nombre, _textBoxCliente[1].Text)
+                            .Set(c => c.Apellido, _textBoxCliente[2].Text)
+                            .Set(c => c.Email, _textBoxCliente[3].Text)
+                            .Set(c => c.Telefono, _textBoxCliente[4].Text)
+                            .Set(c => c.Direccion, _textBoxCliente[5].Text)
+                            .Set(c => c.Credito, _checkBoxCredito.Checked)
+                            .Set(c => c.Imagen, image)
+                            .Update();
                         break;
                 }
                 CommitTransaction();

@@ -219,6 +219,37 @@ namespace Sistema_punto_de_venta
         {
             clientes.Registro_Paginas();
         }
+        
+        private void textBoxCliente_Buscar_TextChanged(object sender, EventArgs e)
+        {
+            clientes.SearchClientes(textBoxCliente_Buscar.Text);
+        }
+
+        private void tabControlCliente1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (tabControlCliente1.SelectedIndex)
+            {
+                case 0:
+                    tabControlCliente2.SelectedIndex = 0;
+                    break;
+                case 1:
+                    tabControlCliente2.SelectedIndex = 1;
+                    break;
+            }
+        }
+
+        private void tabControlCliente2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (tabControlCliente2.SelectedIndex)
+            {
+                case 0:
+                    tabControlCliente1.SelectedIndex = 0;
+                    break;
+                case 1:
+                    tabControlCliente1.SelectedIndex = 1;
+                    break;
+            }
+        }
         #endregion
     }
 }
